@@ -22,4 +22,20 @@ public class Dto {
     public void setGoods(Goods goods) {
         this.goods = goods;
     }
+
+    public Dto() {
+    }
+
+    public Dto(User user, Goods goods) {
+        this.user = user;
+        this.goods = goods;
+    }
+
+    @Override
+    public String toString() {
+        return "Dto{" +
+                "user=" + user +
+                ", goods=" + goods +
+                '}';
+    }
 }
